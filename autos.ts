@@ -9,5 +9,8 @@ btnEnv.addEventListener("click", () => {
   let vuelta22: number = Number(vuelta2.value);
   let vuelta33: number = Number(vuelta3.value);
   let vuelta44: number = Number(vuelta4.value);
-  console.log("el dato ingresado es ");
+  console.log("el dato ingresado es ", vuelta11);
+  console.log("el dato ingresado es ", vuelta22);
+  console.log("el dato ingresado es ", vuelta33);
+  console.log("el dato ingresado es ", vuelta44);
 });

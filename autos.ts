@@ -16,10 +16,7 @@ btnEnv.addEventListener("click", () => {
   let v3m: number = Number(vuelta3M.value);
   let v3s: number = Number(vuelta3S.value);
   let v4m: number = Number(vuelta4M.value);
-  let m4s: number = Number(vuelta4S.value);
+  let v4s: number = Number(vuelta4S.value);
 
-  console.log("el dato ingresado es ", vuelta11);
-  console.log("el dato ingresado es ", vuelta22);
-  console.log("el dato ingresado es ", vuelta33);
-  console.log("el dato ingresado es ", vuelta44);
+  console.log(v4s + v4s);
 });

@@ -1,14 +1,23 @@
 let btnEnv = document.getElementById("btnEnviar");
-let vuelta1 = document.getElementById("vuelta1");
-let vuelta2 = document.getElementById("vuelta2");
-let vuelta3 = document.getElementById("vuelta3");
-let vuelta4 = document.getElementById("vuelta4");
+let vuelta1M = document.getElementById("vuelta1M");
+let vuelta1S = document.getElementById("vuelta1S");
+let vuelta2M = document.getElementById("vuelta2M");
+let vuelta2S = document.getElementById("vuelta2S");
+let vuelta3M = document.getElementById("vuelta3M");
+let vuelta3S = document.getElementById("vuelta3S");
+let vuelta4M = document.getElementById("vuelta4M");
+let vuelta4S = document.getElementById("vuelta4S");
 
 btnEnv.addEventListener("click", () => {
-  let vuelta11: number = Number(vuelta1.value);
-  let vuelta22: number = Number(vuelta2.value);
-  let vuelta33: number = Number(vuelta3.value);
-  let vuelta44: number = Number(vuelta4.value);
+  let v1m: number = Number(vuelta1M.value);
+  let v1s: number = Number(vuelta1S.value);
+  let v2m: number = Number(vuelta2M.value);
+  let v2s: number = Number(vuelta2S.value);
+  let v3m: number = Number(vuelta3M.value);
+  let v3s: number = Number(vuelta3S.value);
+  let v4m: number = Number(vuelta4M.value);
+  let m4s: number = Number(vuelta4S.value);
+
   console.log("el dato ingresado es ", vuelta11);
   console.log("el dato ingresado es ", vuelta22);
   console.log("el dato ingresado es ", vuelta33);

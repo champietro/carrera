@@ -21,7 +21,25 @@ btnEnv.addEventListener("click", () => {
   let segundos = v1s + v2s + v3s + v4s;
   let minutos = v1m + v2m + v3m + v4m;
 
-  console.log(v1s);
-  console.log("totales: ", segundos);
-  console.log("totales: ", minutos);
+  if (segundos > 60) {
+    let minutosExtras = 0; // variable inicial
+    minutosExtras = segundos / 60;
+    minutos = minutosExtras + minutos;
+    segundos = segundos % 60;
+  }
+
+  if (minutos > 60) {
+    let horas = 1; // variable inicial
+    horas = minutos / 60;
+    minutos = minutos % 60;
+    minutos = Math.trunc(minutos);
+    horas = Math.trunc(horas);
+    // minutos = Math.round(minutos);
+    // horas = Math.round(horas);
+  }
+
+  console.log("Segundos: ", segundos);
+  console.log("Segundos: ", segundos);
+  console.log("Minutos: ", minutos);
+  console.log("horas: ", horas);
 });

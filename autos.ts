@@ -18,5 +18,10 @@ btnEnv.addEventListener("click", () => {
   let v4m: number = Number(vuelta4M.value);
   let v4s: number = Number(vuelta4S.value);
 
-  console.log(v4s + v4s);
+  let segundos = v1s + v2s + v3s + v4s;
+  let minutos = v1m + v2m + v3m + v4m;
+
+  console.log(v1s);
+  console.log("totales: ", segundos);
+  console.log("totales: ", minutos);
 });

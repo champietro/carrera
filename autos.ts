@@ -20,10 +20,9 @@ btnEnv.addEventListener("click", () => {
 
   let segundos = v1s + v2s + v3s + v4s; // suma todos los segundos
   let minutos = v1m + v2m + v3m + v4m; // suma todos los minutos
-  
+  /*
   let promedioS = 0;
   let promedioM = 0;
-
   promedioS = segundos / 4;
   promedioM = minutos / 4;
 
@@ -39,7 +38,7 @@ if promedioM > 60{
   promedioH = promedioH + promedioM;
   promedioM = promedioM % 60;
 }
-
+*/
 
 
 
@@ -66,6 +65,6 @@ if promedioM > 60{
 
 
   console.log("El tiempo total es: ,"horas, ":", minutos, ":", segundos);
-  console.log("El tiempo promedio es: ,"promedioH, ":", promedioM, ":", promedioS);
+  //console.log("El tiempo promedio es: ,"promedioH, ":", promedioM, ":", promedioS);
  
 });

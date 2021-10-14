@@ -21,18 +21,18 @@ btnEnv.addEventListener("click", () => {
   let segundos = v1s + v2s + v3s + v4s; // suma todos los segundos
   let minutos = v1m + v2m + v3m + v4m; // suma todos los minutos
   
-  let promedioS = 0;
-  let promedioM = 0;
+  let promedioS = 1234;
+  let promedioM = 1234;
   promedioS = segundos / 4;
   promedioM = minutos / 4;
 
-if promedioS > 60{ 
+if promedioS >= 60{ 
   promedioS = promedioS / 60;
   promedioM = promedioM + promedioS;
   promedioS = promedioS % 60;
 }
 
-if promedioM > 60{
+if promedioM >= 60{
   let promedioH = 0;
   promedioM = promedioM / 60;
   promedioH = promedioH + promedioM;
@@ -43,14 +43,14 @@ promedioS = Math.trunc(promedioS);
 promedioM = Math.trunc(promedioM);
 /* */
 
-  if (segundos > 60) {
+  if (segundos >= 60) {
     let minutosExtras = 0; // variable inicial
     minutosExtras = segundos / 60;
     minutos = minutosExtras + minutos;
     segundos = segundos % 60;
   }
 
-  if (minutos > 60) {
+  if (minutos >= 60) {
     let horas = 0; // variable inicial
     horas = minutos / 60;
     minutos = minutos % 60;
